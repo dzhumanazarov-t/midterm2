@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="122sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_marginStart="16sp"
+            android:background="@drawable/ic_left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/TODO" />
+
+        <TextView
+            style="@style/order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageButton"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="347sp"
+        android:layout_height="58sp"
+        android:layout_marginTop="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14sp"
+            android:background="@drawable/ic_pacing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/TODO"/>
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_line"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton23"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageButton2"
+            app:layout_constraintTop_toTopOf="@+id/imageButton2"
+            android:contentDescription="@string/TODO"/>
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_line"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton23"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton12"
+            app:layout_constraintStart_toEndOf="@+id/imageButton23"
+            app:layout_constraintTop_toTopOf="@+id/imageButton23"
+            android:contentDescription="@string/TODO"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_line__1_"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton12"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+            app:layout_constraintStart_toEndOf="@+id/imageButton12"
+            app:layout_constraintTop_toTopOf="@+id/imageButton12"
+            android:contentDescription="@string/TODO"/>
+
+        <ImageButton
+            android:id="@+id/imageButton23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72sp"
+            android:background="@drawable/ic_pacing"
+            app:layout_constraintStart_toEndOf="@+id/imageButton2"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/TODO"/>
+
+        <ImageButton
+            android:id="@+id/imageButton12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72sp"
+            android:background="@drawable/ic_pacing"
+            app:layout_constraintStart_toEndOf="@+id/imageButton23"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/TODO"/>
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72sp"
+            android:background="@drawable/ic_complete"
+            app:layout_constraintStart_toEndOf="@+id/imageButton12"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/TODO"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/packing"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="93dp"
+            android:layout_marginTop="12sp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/shipping"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="188dp"
+            android:layout_marginTop="12sp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/arriving"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="288dp"
+            android:layout_marginTop="12sp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/success"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="343sp"
+        android:layout_height="249sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/product"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/first_product2"
+            style="@style/button"
+            android:layout_width="340sp"
+            android:layout_height="101sp"
+            app:cardCornerRadius="5sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/first_product">
+
+
+            <TextView
+                style="@style/fortext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100sp"
+                android:layout_marginTop="10sp"
+                android:text="@string/nike_air_zoom_pegasus_36_miami" />
+
+            <TextView
+                style="@style/fortext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100sp"
+                android:layout_marginTop="70sp"
+                android:text="@string/_299_43"
+                android:textColor="@color/text2" />
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_marginStart="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/first_product"
+            app:layout_constraintStart_toStartOf="@+id/first_product"
+            app:layout_constraintTop_toTopOf="@+id/first_product"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/first_product"
+            style="@style/button"
+            android:layout_width="340sp"
+            android:layout_height="101sp"
+            app:cardCornerRadius="5sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nike_air_zoom_pegasus_36_miami"
+                android:layout_marginStart="100sp"
+                android:layout_marginTop="10sp"
+                style="@style/fortext"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_299_43"
+                android:layout_marginStart="100sp"
+                android:layout_marginTop="70sp"
+                style="@style/fortext"
+                android:textColor="@color/text2" />
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_marginStart="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/first_product"
+            app:layout_constraintStart_toStartOf="@+id/first_product"
+            app:layout_constraintTop_toTopOf="@+id/first_product"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            app:layout_constraintBottom_toBottomOf="@+id/first_product2"
+            app:layout_constraintStart_toStartOf="@+id/first_product2"
+            app:layout_constraintTop_toTopOf="@+id/first_product2"
+            android:layout_marginStart="16sp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/button"
+        android:layout_width="343sp"
+        android:layout_height="201sp"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="12sp"
+            android:text="@string/shipping"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="12sp"
+            android:text="@string/address"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="12sp"
+            android:text="@string/no_resi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="16sp"
+            android:text="@string/date_shipping"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/january_16_2015"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16sp"/>
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POS Reggular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_000192848573"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="175sp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/_2727_lakeshore_rd_undefined_nampa_tennessee_78410"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/textView9"
+        style="@style/fortext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shipping_details"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

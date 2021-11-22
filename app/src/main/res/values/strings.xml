@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">midterm</string>
+    <string name="TODO">TODO</string>
+    <string name="packing">Packing</string>
+    <string name="shipping">Shipping</string>
+    <string name="arriving">Arriving</string>
+    <string name="success">Success</string>
+    <string name="nike_air_zoom_pegasus_36_miami">Nike Air Zoom Pegasus 36 Miami</string>
+    <string name="_299_43">$299,43</string>
+    <string name="shipping_details">Shipping Details</string>
+    <string name="date_shipping">Date Shipping</string>
+    <string name="_2727_lakeshore_rd_undefined_nampa_tennessee_78410">2727 Lakeshore Rd undefined Nampa, Tennessee 78410</string>
+    <string name="address">Address</string>
+    <string name="no_resi">No. Resi</string>
+    <string name="january_16_2015">January 16, 2015</string>
+    <string name="_000192848573">000192848573</string>
+</resources>
